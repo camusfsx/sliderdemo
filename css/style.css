@@ -1,0 +1,10 @@
+body{display: grid;}
+ul,li{list-style: none;margin: 0;padding: 0;}
+.slider{position: relative;margin: auto;}
+.imgList{width: 480px;height: 270px;overflow: hidden;position: relative;
+flex-flow:column nowrap;}
+.imgList>.imgBoard{transition: all 400ms;}
+.imgList>.imgBoard>img{align-items: flex-start;}
+.iconList{position: absolute;top:-5px;left:-150px;}
+.iconList>img{display: block;margin: 0;border:3px solid transparent;}
+.iconList>.clicked{border:3px solid red;}
