@@ -1,6 +1,6 @@
 let $imgBoard = $(`.imgBoard`)
     , $icons = $(`.iconList>img`)
-    ,clickIndex = 0
+    , clickIndex = 0
 var carouselTimer = setCarouselTimer.call()
 $icons.on(`click`, (event) => {
     let $icon = $(event.target)
@@ -8,7 +8,7 @@ $icons.on(`click`, (event) => {
         , pixel = index * 275
     $icon.addClass(`clicked`).siblings(`.clicked`).removeClass(`clicked`)
     $imgBoard.css({ transform: `translateY(-${pixel}px)` })
-}) 
+})
 
 stopForHover.call(this, $imgBoard)
 stopForHover.call(this, $icons)
